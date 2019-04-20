@@ -10,7 +10,7 @@
   "scripts": {
     "compile": "babel src -d lib",
     "bundle": "babel src/ --out-file dist/react-hexgrid.js",
-    "prepublish": "yarn compile",
+    "postinstall": "yarn compile",
     "test:watch": "jest --watch --coverage",
     "test": "jest --coverage"
   },

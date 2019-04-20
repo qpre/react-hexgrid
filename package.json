@@ -8,8 +8,8 @@
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
-    "compile": "./node_modules/.bin/babel src -d lib",
-    "bundle": "./node_modules/.bin/babel src/ --out-file dist/react-hexgrid.js",
+    "compile": "npx babel src -d lib",
+    "bundle": "npx babel src/ --out-file dist/react-hexgrid.js",
     "postinstall": "yarn compile",
     "test:watch": "jest --watch --coverage",
     "test": "jest --coverage"
